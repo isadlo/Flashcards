@@ -1,0 +1,84 @@
+.ground{
+    background-color: papayawhip;
+    background-image: url('images/world.png');
+}
+
+.container  {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.capital {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+.card {
+    width:150px;
+    height:150px;
+    margin: 10px;
+    transition: all 2s ease;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.card:hover {
+    transform: rotateY(180deg);
+}
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front {
+    background: #e9967a;
+    z-index: 2;
+}
+.back {
+    background: crimson;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+.card-one{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.card-two {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+.card-three {
+    grid-column: 3/ 3;
+    grid-row: 1 / 3;
+}
+.card-four{
+    grid-column: 1 /3;
+    grid-row: 2 / 3;
+}
+.card-five{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.card-six{
+    grid-column: 3/3;
+    grid-row: 2/3;
+}
+.card-seven{
+    grid-column: 1/3;
+    grid-row: 3/3;
+}
+.card-eight{
+    grid-column: 2/3;
+    grid-row: 3/3;
+}
+.card-nine{
+    grid-column: 3/3;
+    grid-row: 3/3;
+}
